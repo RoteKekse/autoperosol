@@ -6416,6 +6416,12 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7570,10 +7576,16 @@ unit quantum of energy) is equal to hv.</obo:IAO_0000115>
     <!-- http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001018 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001018">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002029"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCOObjectProperty_00002003"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A stack sequence is a property of a sample or a functional layer which gives the order of all deposited layers in that sample or functional layer
 .</obo:IAO_0000115>
-        <rdfs:label>solar cell stack sequence</rdfs:label>
+        <rdfs:label xml:lang="en">stack sequence</rdfs:label>
     </owl:Class>
     
 
@@ -7581,8 +7593,14 @@ unit quantum of energy) is equal to hv.</obo:IAO_0000115>
     <!-- http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001020 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00001020">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002029"/>
-        <rdfs:label xml:lang="en">solar cell architecture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCOObjectProperty_00002003"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">architecture</rdfs:label>
     </owl:Class>
     
 
@@ -9267,15 +9285,6 @@ unit quantum of energy) is equal to hv.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A unit for measurement of  electrical charge</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://www.ebi.ac.uk/efo/EFO_0000388</obo:IAO_0000119>
         <rdfs:label xml:lang="en">current unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002029 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ot2661/ontologies/2022/8/TFSCO#TFSCO_00002029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
-        <rdfs:label xml:lang="en">solar cell morphology</rdfs:label>
     </owl:Class>
     
 
